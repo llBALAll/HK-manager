@@ -45,7 +45,7 @@ int main () {
 
 		// (CTRL + ALT + S) open sublime 
 		if ((GetAsyncKeyState(VK_CONTROL) < 0) && (GetAsyncKeyState(VK_MENU) < 0) && (GetAsyncKeyState(0x53) < 0)) {
-			//printf("Key pressed: (CTRL + ALT + Y)\n");
+			//printf("Key pressed: (CTRL + ALT + S)\n");
 
 			// open a program
 			ShellExecuteA (NULL, "open", "C:\\Vinicius\\bin\\Sublime Text Build 3211 x64\\sublime_text.exe", "", NULL, SW_SHOW);
@@ -96,7 +96,7 @@ int main () {
 
 		// (CTRL + ALT + W) open sublime and one terminal side by side
 		if ((GetAsyncKeyState(VK_CONTROL) < 0) && (GetAsyncKeyState(VK_MENU) < 0) && (GetAsyncKeyState(0x57) < 0)) {
-			//printf("Key pressed: (CTRL + ALT + Y)\n");
+			//printf("Key pressed: (CTRL + ALT + W)\n");
 
 			// open a program
 			ShellExecuteA (NULL, "open", "C:\\Vinicius\\bin\\Sublime Text Build 3211 x64\\sublime_text.exe", "", NULL, SW_SHOW);
