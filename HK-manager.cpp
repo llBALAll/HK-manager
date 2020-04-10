@@ -29,7 +29,7 @@ int main () {
 		if ((GetAsyncKeyState(VK_CONTROL) < 0) && (GetAsyncKeyState(VK_MENU) < 0) && (GetAsyncKeyState(0x54) < 0)) {
 			//std::cout << "Key pressed: (CTRL + ALT + T)\n";
 			// open a program
-			ShellExecuteA (NULL, "open", "cmd.exe", "", NULL, SW_SHOW);
+			ShellExecuteA (NULL, "open", "cmd", "", NULL, SW_SHOW);
 			// wait up to 2s the program starts and get handle finding by window title
 			hwnd = waitWinTitle ("C:\\Windows\\System32\\cmd.exe");
 			// set size/position of window program
@@ -93,7 +93,7 @@ int main () {
 		if ((GetAsyncKeyState(VK_CONTROL) < 0) && (GetAsyncKeyState(VK_MENU) < 0) && (GetAsyncKeyState(0x59) < 0)) {
 			//std::cout << "Key pressed: (CTRL + ALT + Y)\n";
 			// open a program
-			ShellExecuteA (NULL, "open", "cmd.exe", "", NULL, SW_SHOW);
+			ShellExecuteA (NULL, "open", "cmd", "", NULL, SW_SHOW);
 			// wait the program starts and get handle finding by window title, if windows title not found in 2 seconds, stop finding
 			hwnd = waitWinTitle ("C:\\Windows\\System32\\cmd.exe");
 			// set the window title bar
@@ -104,7 +104,7 @@ int main () {
 			//editwindow (hwnd);
 
 			// open a program
-			ShellExecuteA (NULL, "open", "cmd.exe", "", NULL, SW_SHOW);
+			ShellExecuteA (NULL, "open", "cmd", "", NULL, SW_SHOW);
 			// wait up to 2s the program starts and get handle finding by window title
 			hwnd = waitWinTitle ("C:\\Windows\\System32\\cmd.exe");
 			// set the window title bar
@@ -130,7 +130,7 @@ int main () {
 			editwindow (hwnd);
 
 			// open a program
-			ShellExecuteA (NULL, "open", "cmd.exe", "", NULL, SW_SHOW);
+			ShellExecuteA (NULL, "open", "cmd", "", NULL, SW_SHOW);
 			// wait up to 2s the program starts and get handle finding by window title
 			hwnd = waitWinTitle ("C:\\Windows\\System32\\cmd.exe");
 			// set size/position of window program
